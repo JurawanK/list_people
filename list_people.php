@@ -23,21 +23,21 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     if($row["sex"]=="M"){
         if($row["age"]>=15){
-            echo "นาย". $row["fname"]. " " . $row["lname"]. "<br>";
+            echo "id: " . $row["id"]. " - Name: " ."นาย". $row["fname"]. " " . $row["lname"]. "<br>";
         }
         else{
-            echo "ด.ช.". $row["fname"]. " " . $row["lname"]. "<br>";
+            echo "id: " . $row["id"]. " - Name: " ."ด.ช.". $row["fname"]. " " . $row["lname"]. "<br>";
         }
     }
     if($row["sex"]=="W"){
         if($row["age"]>=15){
-            echo "นางสาว". $row["fname"]. " " . $row["lname"]. "<br>";
+            echo "id: " . $row["id"]. " - Name: " ."นางสาว". $row["fname"]. " " . $row["lname"]. "<br>";
     }
         else if ($row["marry_status"]=="M"){
-            echo "นาง". $row["fname"]. " " . $row["lname"]. "<br>";
+            echo "id: " . $row["id"]. " - Name: " ."นาง". $row["fname"]. " " . $row["lname"]. "<br>";
         }
         else{
-            echo "ด.ญ.". $row["fname"]. " " . $row["lname"]. "<br>";
+            echo "id: " . $row["id"]. " - Name: " ."ด.ญ.". $row["fname"]. " " . $row["lname"]. "<br>";
         }
     }
 }
