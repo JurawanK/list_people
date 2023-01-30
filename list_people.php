@@ -31,13 +31,13 @@ if ($result->num_rows > 0) {
     }
     if($row["sex"]=="W"){
         if($row["age"]>=15){
-            echo "ด.ญ.". $row["fname"]. " " . $row["lname"]. "<br>";
+            echo "นางสาว". $row["fname"]. " " . $row["lname"]. "<br>";
     }
         else if ($row["marry_status"]=="M"){
             echo "นาง". $row["fname"]. " " . $row["lname"]. "<br>";
         }
         else{
-            echo "นางสาว". $row["fname"]. " " . $row["lname"]. "<br>";
+            echo "ด.ญ.". $row["fname"]. " " . $row["lname"]. "<br>";
         }
     }
 }
